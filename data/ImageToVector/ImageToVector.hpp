@@ -20,21 +20,6 @@
 
 class ImageToVector
 {
-    public:
-        // Constructor / Destructor
-            ImageToVector(const char *nameimage);
-
-            ~ImageToVector();
-        
-        // Accessor
-            std::vector<std::vector<int>> getRed();
-            std::vector<std::vector<int>> getGreen();
-            std::vector<std::vector<int>> getBlue();
-            std::vector<std::vector<std::vector<int>>> getRGB();
-
-            unsigned int getWidth();
-            unsigned int getHeight();
-
     private:
         // Variable
             unsigned int    m_width,
@@ -48,6 +33,21 @@ class ImageToVector
         
         // Function 
             void vectoriseImage();
+
+    public:
+        // Constructor / Destructor
+            ImageToVector(const char *name_image);
+
+            ~ImageToVector();
+        
+        // Accessor
+            std::vector<std::vector<int>> getRed();
+            std::vector<std::vector<int>> getGreen();
+            std::vector<std::vector<int>> getBlue();
+            std::vector<std::vector<std::vector<int>>> getRGB();
+
+            unsigned int getWidth();
+            unsigned int getHeight();
 };
 
 #endif

@@ -12,13 +12,18 @@ MODULE	=	-lsfml-window\
 			-lsfml-system\
 			-lsfml-graphics\
 
-DATA 	=	data/ImageToVector/ImageToVector.cpp\
-			data/ImageToVector/ImageToVectorAccessor.cpp\
-			data/ImageToVector/ImageToVectorPrivateVectorise.cpp\
+DATA 	=	data/Adaptator/Adaptator.cpp\
 			\
 			data/Graphic/Graphic.cpp\
 			data/Graphic/GraphicAccessor.cpp\
+			data/Graphic/GraphicPrivateDraw.cpp\
+			data/Graphic/GraphicPrivateLine.cpp\
 			data/Graphic/GraphicPublicControl.cpp\
+			data/Graphic/GraphicPublicCoord2D.cpp\
+			\
+			data/ImageToVector/ImageToVector.cpp\
+			data/ImageToVector/ImageToVectorAccessor.cpp\
+			data/ImageToVector/ImageToVectorPrivateVectorise.cpp\
 			\
 
 NAME	=	AiAnalyseImage
