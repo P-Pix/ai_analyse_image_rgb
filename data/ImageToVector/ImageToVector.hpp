@@ -14,13 +14,14 @@
 
 #include <iostream>
 #include <vector>
-#include <fstream>
+
+#include <SFML/Graphics/Image.hpp>
+#include <SFML/Graphics/Color.hpp>
 
 class ImageToVector
 {
     public:
         // Constructor / Destructor
-            ImageToVector();
             ImageToVector(const char *nameimage);
 
             ~ImageToVector();
@@ -31,12 +32,22 @@ class ImageToVector
             std::vector<std::vector<int>> getBlue();
             std::vector<std::vector<std::vector<int>>> getRGB();
 
+            unsigned int getWidth();
+            unsigned int getHeight();
+
     private:
         // Variable
+            unsigned int    m_width,
+                            m_height;
             std::vector<std::vector<std::vector<int>>> m_rgb;
             std::vector<std::vector<int>>   m_r,
                                             m_g,
                                             m_b;
+            
+            sf::Image m_Image;
+        
+        // Function 
+            void vectoriseImage();
 };
 
 #endif
