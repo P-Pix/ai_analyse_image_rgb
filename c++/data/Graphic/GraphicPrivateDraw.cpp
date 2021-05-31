@@ -61,6 +61,5 @@ void Graphic::drawAllCoord2D()
     {
         point.setPosition(sf::Vector2f(m_VectorCoord2D[x].x + 50.f, 350 - m_VectorCoord2D[x].y * 1.f));
         drawPoint(point);
-        std::cout << "draw point" << std::endl;
     }
 }

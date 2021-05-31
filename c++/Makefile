@@ -14,6 +14,11 @@ MODULE	=	-lsfml-window\
 
 DATA 	=	data/Adaptator/Adaptator.cpp\
 			\
+			data/Gradient/Gradient.cpp\
+			data/Gradient/GradientAccessor.cpp\
+			data/Gradient/GradientPrivateFunctionX1.cpp\
+			data/Gradient/GradientPublicFunction.cpp\
+			\
 			data/Graphic/Graphic.cpp\
 			data/Graphic/GraphicAccessor.cpp\
 			data/Graphic/GraphicPrivateDraw.cpp\

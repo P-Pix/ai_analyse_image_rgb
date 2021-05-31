@@ -1,11 +1,19 @@
 #include <iostream>
+
 #include "data/ImageToVector/ImageToVector.hpp"
 #include "data/Graphic/Graphic.hpp"
+#include "data/Gradient/Gradient.hpp"
 
 int main()
 {
     ImageToVector Image1("Image/6_001.jpg");
     Graphic Graphic1("6_001");
+    Gradient Gradient1;
+
+    Gradient1.addCoord2D(1, 4);
+    Gradient1.addCoord2D(2, 8);
+    Gradient1.addCoord2D(3, 4);
+    Gradient1.execution();
 
     std::cout << "Window open" << std::endl;
 
